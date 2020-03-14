@@ -16,7 +16,7 @@ function SearchForm(props) {
           name="search"
           type="text"
           className="form-control"
-          placeholder="Search for a Gif"
+          placeholder="Search for a book tile in Google Books"
           id="search"
           size="65"
         />

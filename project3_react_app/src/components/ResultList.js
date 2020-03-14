@@ -16,21 +16,26 @@ function ResultList(props) {
     <div className="center">
     {props.results.map(result => (
       <div className="card">
-      <div className="img-container" >
+      <div className="img-container fill" >
       {/* <img alt={result.title} className="img-fluid" src={result.images.fixed_height.url} /> */}
-      <img alt={result.title} src={result.images.original.url} />
+      {/* <img alt={result.title} src={result.images.original.url} /> */}
+      <img className="fill" alt="any" src={result.volumeInfo.imageLinks.thumbnail} />
+
 
       </div>
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> {result.title}
+            <strong>Title:</strong> {result.volumeInfo.title}
           </li>
           <li>
-            <strong>URL:</strong> <a href={result.url}>Link</a>
+            <strong>Preview:</strong> <a href={result.volumeInfo.previewLink}>Link</a>
           </li>
           <li>
-            <strong>Rating:</strong> {result.rating}
+            <strong>Authors:</strong> {result.volumeInfo.authors}
+          </li>
+          <li>
+            <strong>Avg Ratings:</strong> {result.volumeInfo.averageRating}
           </li>
         </ul>
       </div>
