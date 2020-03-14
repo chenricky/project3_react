@@ -3,7 +3,12 @@ import SearchResultContainer from "../SearchResultContainer";
 
 
 function Blog() {
-  return <SearchResultContainer />;
+  return (
+    <div className="center">
+    <h1 className="form-group">Giphy React Project 3</h1>
+    <SearchResultContainer />
+  </div>
+  );
 }
 
 export default Blog;

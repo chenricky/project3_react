@@ -13,7 +13,7 @@ function ResultList(props) {
     //   ))}
     // </ul>
     
-    <div>
+    <div className="center">
     {props.results.map(result => (
       <div className="card">
       <div className="img-container">
