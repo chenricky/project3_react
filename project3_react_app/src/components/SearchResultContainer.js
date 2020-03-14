@@ -6,6 +6,7 @@ import API from "../utils/API";
 class SearchResultContainer extends Component {
   state = {
     search: "",
+    // limit:2,
     results: []
   };
 
@@ -32,6 +33,7 @@ class SearchResultContainer extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     this.searchGiphy(this.state.search);
+    
   };
 
   render() {

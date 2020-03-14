@@ -5,9 +5,11 @@
 
 .center {
   margin: auto;
+  align-self: center;
+  vertical-align: middle;
   width: 100%;
   /* border: 3px solid #73AD21; */
-  padding: 10px;
+  padding: 5px;
 }
 
 .card {
@@ -30,14 +32,16 @@
 
 }
 .card > .img-container > img {
-  width: 60%
+  width: 60%;
 }
 
 .card > .content {
+  padding-top: 1rem ;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 15px;
   background:#6CADDC;
+  height: 35%;
 }
 
 .card > .content > ul {
@@ -66,3 +70,7 @@
   min-height: 300px;
   padding-top: 100px;
 }
+
+.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.scale-down {object-fit: scale-down;}

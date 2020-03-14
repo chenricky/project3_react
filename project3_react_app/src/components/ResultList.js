@@ -16,9 +16,9 @@ function ResultList(props) {
     <div className="center">
     {props.results.map(result => (
       <div className="card">
-      <div className="img-container">
+      <div className="img-container" >
       {/* <img alt={result.title} className="img-fluid" src={result.images.fixed_height.url} /> */}
-      <img alt={result.title} className="img-fluid" src={result.images.original.url} />
+      <img alt={result.title} src={result.images.original.url} />
 
       </div>
       <div className="content">

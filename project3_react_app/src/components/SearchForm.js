@@ -18,8 +18,21 @@ function SearchForm(props) {
           className="form-control"
           placeholder="Search for a Gif"
           id="search"
-          size="35"
+          size="65"
         />
+
+            {/* <input
+              onChange={props.handleInputChange}
+              value={props.limit}
+              name="limit"
+              type="text"
+              className="form-control"
+              placeholder="any number"
+              id="limit"
+              size="15"
+            /> */}
+
+
         {/* </Col>
         <Col size="xs-3 sm-2"> */}
         <button onClick={props.handleFormSubmit} className="btn btn-primary mt-10">
