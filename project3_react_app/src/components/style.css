@@ -1,3 +1,5 @@
+
+
 .card {
   background: #fff;
   border-radius: 2px;
@@ -14,7 +16,7 @@
   height: 60%;
   overflow: hidden;
   text-align: center;
-  /* background:#6CADDC; */
+  background:orange;
 
 }
 .card > .img-container > img {
@@ -30,6 +32,7 @@
 
 .card > .content > ul {
   list-style-type: none;
+  
 }
 
 .card > .content > ul > li {
@@ -47,4 +50,9 @@
 
 .card > .remove:hover {
   color: #d50000;
+}
+
+.jumbotron {
+  min-height: 300px;
+  padding-top: 100px;
 }
